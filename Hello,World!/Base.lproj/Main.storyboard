@@ -24,15 +24,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR8-2h-c9m">
-                                <rect key="frame" x="132" y="675" width="150" height="46"/>
+                                <rect key="frame" x="82" y="675" width="250" height="46"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="uCD-B2-MwA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="uCD-B2-MwA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="tintColor" red="0.83277454319999999" green="0.85133011560000005" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Show Text"/>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkI-xY-0sw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +47,10 @@
                             <constraint firstItem="eR8-2h-c9m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v74-Jf-Fhf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWowldLabel" destination="JGG-pn-RlI" id="sxr-pQ-q4Z"/>
+                        <outlet property="toggleButton" destination="eR8-2h-c9m" id="RyX-EG-SC9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
